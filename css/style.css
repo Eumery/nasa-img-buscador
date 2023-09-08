@@ -1,0 +1,56 @@
+
+
+
+  main {
+    min-height: calc(100vh - 160px);
+}  
+
+img {
+  width: 100%;
+  display: block;
+}
+
+#content {
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background-color: #fff;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  transition: all 400ms ease;
+}
+
+.card:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%);
+}
+
+.card-header {
+  border-radius: 8px 8px 0 0;
+  height: 200px;
+  overflow: hidden;
+}
+
+.card-body {
+  padding: 20px 15px;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  height: 200px; /* Asegura que la altura del cuerpo sea igual a la del encabezado */
+  overflow: auto; /* Agrega una barra de desplazamiento si el contenido es demasiado largo */
+}
+
+.card-description::-webkit-scrollbar {
+  width: 7px;
+}
+
+.card-description::-webkit-scrollbar-thumb {
+  background-color: black;
+}
